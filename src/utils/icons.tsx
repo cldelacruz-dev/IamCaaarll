@@ -1,18 +1,33 @@
 import { FC, SVGProps } from 'react'
 
+import AngularIcon from '../assets/icons/angular.svg'
+import AspNetIcon from '../assets/icons/aspnet.svg'
+import AwsIcon from '../assets/icons/aws.svg'
+import CodeigniterIcon from '../assets/icons/codeigniter.svg'
+import CSharpIcon from '../assets/icons/csharp.svg'
+import DockerIcon from '../assets/icons/docker.svg'
 import Earning from '../assets/icons/earning.svg'
 import ExpressjsIcon from '../assets/icons/express.svg'
+import FirebaseIcon from '../assets/icons/firebase.svg'
 import JavaScriptIcon from '../assets/icons/javascript.svg'
+import LaravelIcon from '../assets/icons/laravel.svg'
 import Likes from '../assets/icons/likes.svg'
+import LinuxIcon from '../assets/icons/linux.svg'
+import MySQLIcon from '../assets/icons/mysql.svg'
 import NestjsIcon from '../assets/icons/nest.svg'
 import NextjsIcon from '../assets/icons/nextjs.svg'
 import NodejsIcon from '../assets/icons/nodejs.svg'
 import ReactIcon from '../assets/icons/react.svg'
 import SocketIcon from '../assets/icons/socket.svg'
+import SQLIcon from '../assets/icons/sql.svg'
+import SQLServerIcon from '../assets/icons/sqlserver.svg'
 import Star from '../assets/icons/star.svg'
+import SupabaseIcon from '../assets/icons/supabase.svg'
+import SymfonyIcon from '../assets/icons/symfony.svg'
 import TailwindCSS from '../assets/icons/tailwind-css.svg'
 import Timer from '../assets/icons/timer.svg'
 import TypescriptIcon from '../assets/icons/typescript.svg'
+import WindowsIcon from '../assets/icons/windows.svg'
 
 const PreviewIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
   return (
@@ -307,22 +322,32 @@ const PhoneIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
 }
 
 export {
+  AngularIcon,
   ArrowLeftIcon,
   ArrowRightIcon,
+  AspNetIcon,
+  AwsIcon,
   BurgerIcon,
   CheckIcon,
   ChevronRightIcon,
   CloseIcon,
+  CodeigniterIcon,
   Codepen,
+  CSharpIcon,
+  DockerIcon,
   Earning,
   ExpressjsIcon,
   Facebook,
+  FirebaseIcon,
   GithubIcon,
   Instagram,
   JavaScriptIcon,
+  LaravelIcon,
   Likes,
   LinkedIn,
+  LinuxIcon,
   MsgIcon,
+  MySQLIcon,
   NestjsIcon,
   NextjsIcon,
   NodejsIcon,
@@ -330,10 +355,15 @@ export {
   PreviewIcon,
   ReactIcon,
   SocketIcon,
+  SQLIcon,
+  SQLServerIcon,
   Star,
   StarIcon,
+  SupabaseIcon,
+  SymfonyIcon,
   TailwindCSS,
   Timer,
   TypescriptIcon,
+  WindowsIcon,
   X,
 }

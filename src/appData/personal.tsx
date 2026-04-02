@@ -1,4 +1,4 @@
-import { Codepen, Facebook, GithubIcon, Instagram, LinkedIn, X } from '@/utils/icons'
+import { Facebook, Instagram, LinkedIn } from '@/utils/icons'
 
 export const socials = [
   { href: 'https://www.linkedin.com/in/carl-lorenze-dela-cruz-a08b71187/', icon: <LinkedIn /> },
