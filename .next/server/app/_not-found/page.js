@@ -1,0 +1,17 @@
+const CHUNK_PUBLIC_PATH = "server/app/_not-found/page.js";
+const runtime = require("../../chunks/ssr/[turbopack]_runtime.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_next_dist_97f32f._.js");
+runtime.loadChunk("server/chunks/ssr/[root of the server]__592060._.js");
+runtime.loadChunk("server/chunks/ssr/src_app_896cde._.js");
+runtime.loadChunk("server/chunks/ssr/src_app_3b752a._.js");
+runtime.loadChunk("server/chunks/ssr/src_app_f94f51._.js");
+runtime.loadChunk("server/chunks/ssr/src_app_d4c251._.js");
+runtime.loadChunk("server/chunks/ssr/src_app_c3bb48._.js");
+runtime.loadChunk("server/chunks/ssr/_b42a18._.js");
+runtime.loadChunk("server/chunks/ssr/[externals]_next_dist_compiled_@vercel_og_index_node_9df684.js");
+runtime.loadChunk("server/chunks/ssr/[root of the server]__205c70._.css");
+runtime.loadChunk("server/chunks/ssr/[root of the server]__8b0c14._.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_5a00c6._.js");
+runtime.loadChunk("server/chunks/ssr/_next-internal_server_app__not-found_page_actions_1477f8.js");
+runtime.getOrInstantiateRuntimeModule("[project]/.next-internal/server/app/_not-found/page/actions.js [app-rsc] (ecmascript)", CHUNK_PUBLIC_PATH);
+module.exports = runtime.getOrInstantiateRuntimeModule("[project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/_not-found/page { METADATA_0 => \"[project]/src/app/favicon.ico.mjs { IMAGE => \\\"[project]/src/app/favicon.ico [app-rsc] (static)\\\" } [app-rsc] (structured image object, ecmascript, Next.js server component)\", METADATA_1 => \"[project]/src/app/icon1.png.mjs { IMAGE => \\\"[project]/src/app/icon1.png [app-rsc] (static)\\\" } [app-rsc] (structured image object, ecmascript, Next.js server component)\", METADATA_2 => \"[project]/src/app/icon2.png.mjs { IMAGE => \\\"[project]/src/app/icon2.png [app-rsc] (static)\\\" } [app-rsc] (structured image object, ecmascript, Next.js server component)\", METADATA_3 => \"[project]/src/app/twitter-image.png.mjs { IMAGE => \\\"[project]/src/app/twitter-image.png [app-rsc] (static)\\\" } [app-rsc] (structured image object, ecmascript, Next.js server component)\", METADATA_4 => \"[project]/src/app/opengraph-image.png.mjs { IMAGE => \\\"[project]/src/app/opengraph-image.png [app-rsc] (static)\\\" } [app-rsc] (structured image object, ecmascript, Next.js server component)\", METADATA_5 => \"[project]/src/app/opengraph-image--metadata.js [app-rsc] (ecmascript, Next.js server component)\", MODULE_6 => \"[project]/src/app/layout.tsx [app-rsc] (ecmascript, Next.js server component)\", MODULE_7 => \"[project]/node_modules/next/dist/client/components/not-found-error.js [app-rsc] (ecmascript, Next.js server component)\" } [app-rsc] (ecmascript)", CHUNK_PUBLIC_PATH).exports;
