@@ -21,21 +21,21 @@ import {
 } from '../utils/icons'
 
 export const experiences = [
-  {
-    role: 'Backend Developer',
-    company: 'Zen Business Solution Inc. (Part-time)',
-    companylogo: '',
-    date: 'October 2025 – Present',
-    desc: 'Develop, maintain, and optimize server-side applications as a part-time backend developer. Responsible for building scalable architectures, integrating third-party services, and staying current with emerging AI-related tools and frameworks.',
-    descBullets: [
-      'Develop, maintain, and optimize server-side applications using Next.js, Firebase and other frameworks.',
-      'Design and implement scalable back-end architectures that ensure high performance and security.',
-      'Integrate APIs and third-party services to enhance product functionality.',
-      'Collaborate closely with front-end developers, product managers, and designers to deliver seamless user experiences.',
-      'Monitor, debug, and improve system performance, ensuring reliability and scalability.',
-      'Stay up-to-date with emerging technologies, particularly AI-related tools and frameworks.',
-    ],
-  },
+  // {
+  //   role: 'Backend Developer',
+  //   company: 'Zen Business Solution Inc. (Part-time)',
+  //   companylogo: '',
+  //   date: 'October 2025 – Present',
+  //   desc: 'Develop, maintain, and optimize server-side applications as a part-time backend developer. Responsible for building scalable architectures, integrating third-party services, and staying current with emerging AI-related tools and frameworks.',
+  //   descBullets: [
+  //     'Develop, maintain, and optimize server-side applications using Next.js, Firebase and other frameworks.',
+  //     'Design and implement scalable back-end architectures that ensure high performance and security.',
+  //     'Integrate APIs and third-party services to enhance product functionality.',
+  //     'Collaborate closely with front-end developers, product managers, and designers to deliver seamless user experiences.',
+  //     'Monitor, debug, and improve system performance, ensuring reliability and scalability.',
+  //     'Stay up-to-date with emerging technologies, particularly AI-related tools and frameworks.',
+  //   ],
+  // },
   {
     role: 'Full Stack Developer',
     company: 'Open Point (MySite)',
@@ -70,7 +70,7 @@ export const experiences = [
     role: 'Developer',
     company: 'Bounty Fresh Inc.',
     companylogo: '',
-    date: 'October 2019 – December 2022',
+    date: 'May 2019 – December 2022',
     desc: 'Developed and maintained an in-house project to streamline company operations, enhancing efficiency and automation. Managed System Support across multiple departments while independently handling new projects from planning to deployment.',
     descBullets: [
       'Designed and implemented internal tools to automate reports and improve workflow efficiency.',
