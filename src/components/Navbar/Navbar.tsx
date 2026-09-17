@@ -18,6 +18,11 @@ const navItems = [
     isAnchor: true,
   },
   {
+    label: '_projects',
+    href: '#projects',
+    isAnchor: true,
+  },
+  {
     label: '_services',
     href: '#services',
     isAnchor: true,
@@ -67,7 +72,7 @@ const Navbar = () => {
             <li
               key={href}
               onClick={() => setIsVisible(false)}
-              className="border-border flex items-center border-b px-4 text-2xl md:border-y-0 md:border-e md:text-base md:first:border-s md:last:ml-auto md:last:border-none md:last:px-0 lg:px-8">
+              className="border-border flex items-center border-b px-4 text-2xl md:border-y-0 md:border-e md:text-sm md:first:border-s md:last:ml-auto md:last:border-none md:last:px-0 lg:px-6 lg:text-base xl:px-8">
               {isAnchor ? (
                 <a
                   href={href}
@@ -77,7 +82,7 @@ const Navbar = () => {
               ) : (
                 <Link
                   href={href}
-                  className={`text-primary-content hover:text-neutral w-full py-7 transition-all duration-150 md:py-0 ${pathname === href ? 'text-neutral cursor-text' : ''}`}>
+                  className={`text-primary-content hover:text-neutral w-full py-7 transition-all duration-150 md:py-0 ${pathname === href ? 'text-neutral' : ''}`}>
                   {label}
                 </Link>
               )}

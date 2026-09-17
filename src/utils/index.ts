@@ -12,6 +12,16 @@ export function formatDate(dateString: string): string {
   return `${day}${daySuffix} ${month} ${year}`
 }
 
+// Full years between a YYYY-MM-DD date and now
+export function getYearsSince(dateString: string, now = new Date()): number {
+  const [year, month, day] = dateString.split('-').map(Number)
+  const years = now.getFullYear() - year
+  const beforeAnniversary =
+    now.getMonth() + 1 < month || (now.getMonth() + 1 === month && now.getDate() < day)
+
+  return beforeAnniversary ? years - 1 : years
+}
+
 function getDaySuffix(day: number): string {
   if (day > 3 && day < 21) return 'th'
   switch (day % 10) {

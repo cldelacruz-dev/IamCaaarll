@@ -1,6 +1,8 @@
 import { footerLinks } from '@/appData'
-import { socials } from '@/appData/personal'
+import { careerStartDate, socials } from '@/appData/personal'
+import { getYearsSince } from '@/utils'
 import Logo from '../Navbar/Logo'
+import YearsOfExperience from './YearsOfExperience'
 
 const Footer = () => {
   return (
@@ -12,7 +14,12 @@ const Footer = () => {
             <span className="text-neutral text-lg font-medium">Carl Lorenze Dela Cruz</span>
           </h5>
           <p className="text-tertiary-content">
-            Full Stack Developer with over 5 years of experience creating reliable and user-friendly web and mobile applications
+            Full Stack Developer with over{' '}
+            <YearsOfExperience
+              since={careerStartDate}
+              buildTimeYears={getYearsSince(careerStartDate)}
+            />{' '}
+            years of experience creating reliable and user-friendly web and mobile applications
           </p>
           <a
             href="#"

@@ -1,15 +1,20 @@
 // Data for portfolio
+import SpotNowCover from '@/assets/images/projects/spotnow.jpg'
+import { PersonalProject } from '@/lib/types'
 import {
   AngularIcon,
   AspNetIcon,
   AwsIcon,
+  BlazorIcon,
   CodeigniterIcon,
   CSharpIcon,
   DockerIcon,
+  DotNetIcon,
   FirebaseIcon,
   JavaScriptIcon,
   LaravelIcon,
   LinuxIcon,
+  MariaDBIcon,
   NextjsIcon,
   NodejsIcon,
   ReactIcon,
@@ -21,26 +26,41 @@ import {
 } from '../utils/icons'
 
 export const experiences = [
-  // {
-  //   role: 'Backend Developer',
-  //   company: 'Zen Business Solution Inc. (Part-time)',
-  //   companylogo: '',
-  //   date: 'October 2025 – Present',
-  //   desc: 'Develop, maintain, and optimize server-side applications as a part-time backend developer. Responsible for building scalable architectures, integrating third-party services, and staying current with emerging AI-related tools and frameworks.',
-  //   descBullets: [
-  //     'Develop, maintain, and optimize server-side applications using Next.js, Firebase and other frameworks.',
-  //     'Design and implement scalable back-end architectures that ensure high performance and security.',
-  //     'Integrate APIs and third-party services to enhance product functionality.',
-  //     'Collaborate closely with front-end developers, product managers, and designers to deliver seamless user experiences.',
-  //     'Monitor, debug, and improve system performance, ensuring reliability and scalability.',
-  //     'Stay up-to-date with emerging technologies, particularly AI-related tools and frameworks.',
-  //   ],
-  // },
+  {
+    role: 'Web Development Senior Specialist',
+    company: 'Trends Group Inc.',
+    companylogo: '',
+    date: 'October 2026 – Present',
+    desc: 'Senior specialist in the Corporate IT Application Delivery and Support Group, delivering web, business, and enterprise workflow applications. Provide technical leadership and delivery oversight while driving secure, AI-assisted development practices across the team.',
+    descBullets: [
+      'Design, develop, and enhance web applications, websites, and internal business systems that meet performance, scalability, and maintainability standards.',
+      'Configure, customize, and integrate ITSM and workflow-based enterprise platforms, turning business processes into automation and self-service features.',
+      'Build and maintain integrations with third-party and enterprise systems through APIs and middleware.',
+      'Apply approved AI-assisted development tools across requirements, design, coding, testing, and documentation, validating every output for accuracy and security.',
+      'Mentor developers and oversee team deliverables, including estimation, code reviews, defect resolution, and escalation of delivery risks.',
+      'Drive quality and continuous improvement through secure coding, vulnerability remediation, production troubleshooting, and root cause analysis.',
+    ],
+  },
+  {
+    role: 'FullStack Developer',
+    company: 'Zen Business Solution Inc. (Part-time)',
+    companylogo: '',
+    date: 'October 2025 – Present',
+    desc: 'Develop, maintain, and optimize server-side applications as a part-time backend developer. Responsible for building scalable architectures, integrating third-party services, and staying current with emerging AI-related tools and frameworks.',
+    descBullets: [
+      'Develop, maintain, and optimize server-side applications using Next.js, Firebase and other frameworks.',
+      'Design and implement scalable back-end architectures that ensure high performance and security.',
+      'Integrate APIs and third-party services to enhance product functionality.',
+      'Collaborate closely with front-end developers, product managers, and designers to deliver seamless user experiences.',
+      'Monitor, debug, and improve system performance, ensuring reliability and scalability.',
+      'Stay up-to-date with emerging technologies, particularly AI-related tools and frameworks.',
+    ],
+  },
   {
     role: 'Full Stack Developer',
     company: 'Open Point (MySite)',
     companylogo: '',
-    date: 'June 2025 – Present',
+    date: 'June 2025 – October 2026',
     desc: 'Deliver scalable full-stack web applications from design through deployment. Contribute to code reviews, feature testing, and architectural planning while upholding quality, performance, and security best practices.',
     descBullets: [
       'Develop key features and services from design through to test and deploy, using PHP, JavaScript (jQuery, Vue, native), and SQL.',
@@ -95,13 +115,49 @@ export const experiences = [
   },
 ]
 
+// Personal Projects
+// To add a cover image, put it in src/assets/images/projects/, import it at the top of this file,
+// and set `cover` to the import. `status`, `highlights`, `cover`, and `livePreview` are optional.
+export const projects: PersonalProject[] = [
+  {
+    title: 'SPOTNow',
+    tagline: 'Community Road Hazard Reporting App',
+    year: '2026 – Present',
+    status: 'In Development',
+    desc: 'A community-powered app for reporting and confirming road hazards such as floods, potholes, and fallen wires, piloting in Naic, Cavite. Phase 1 covers the mobile app, REST API, moderation portal, and public website.',
+    highlights: [
+      'Cross-platform iOS and Android app built with React Native and Expo, with photo reports, a hazard map, and nearby alerts.',
+      'ASP.NET Core REST API on .NET 10 with MariaDB spatial queries for location-based feeds and alerts.',
+      'Community verification where reports move from unverified to confirmed as nearby people vote.',
+      'Blazor moderation portal, Docker-based deployment, and GitHub Actions CI with integration tests against a real MariaDB container.',
+    ],
+    techStack: ['.NET 10', 'ASP.NET Core', 'Blazor', 'MariaDB', 'React Native', 'Expo', 'Docker'],
+    cover: SpotNowCover,
+    livePreview: 'https://spot-now.app',
+  },
+  {
+    title: 'IamCaaarll Portfolio',
+    tagline: 'Personal Portfolio Website',
+    year: '2026',
+    status: 'Live',
+    desc: 'My personal portfolio showcasing my experience, skills, and services, built as a statically exported Next.js site and deployed to GitHub Pages.',
+    highlights: [
+      'Four switchable color themes (Light, Dark, Aqua, Retro) powered by CSS variables and Tailwind CSS v4.',
+      'Data-driven sections, so experience, projects, skills, and services are updated from a single file.',
+      'Static export with SEO metadata, sitemap, and Open Graph images.',
+    ],
+    techStack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'GitHub Pages'],
+    livePreview: 'https://cldelacruz-dev.github.io/IamCaaarll/',
+  },
+]
+
 // Service Data
 export const serviceData = [
   {
-    icon: LaravelIcon,
-    title: 'Laravel Development',
+    icon: DotNetIcon,
+    title: '.NET Development',
     shortDescription:
-      'Building secure, scalable PHP applications with Laravel — from RESTful APIs and queues to full MVC web systems ready for production.',
+      'Building secure, scalable business applications with .NET — from ASP.NET Core Web APIs to interactive Blazor web apps ready for production.',
   },
   {
     icon: ReactIcon,
@@ -182,6 +238,10 @@ export const skillList = [
     icon: SQLIcon,
   },
   {
+    name: 'MariaDB',
+    icon: MariaDBIcon,
+  },
+  {
     name: 'Supabase',
     icon: SupabaseIcon,
   },
@@ -200,6 +260,14 @@ export const skillList = [
   {
     name: 'ASP.NET',
     icon: AspNetIcon,
+  },
+  {
+    name: '.NET',
+    icon: DotNetIcon,
+  },
+  {
+    name: 'Blazor',
+    icon: BlazorIcon,
   },
   {
     name: 'Angular',

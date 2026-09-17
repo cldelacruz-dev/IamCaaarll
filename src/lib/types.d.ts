@@ -1,3 +1,5 @@
+import type { StaticImageData } from 'next/image'
+
 export interface Project {
   title: string
   shortDescription: string
@@ -14,13 +16,16 @@ export interface Project {
   siteAge?: string
 }
 
-export interface Experience {
-  role: string
-  company: string
-  companylogo: string
-  date: string
+export interface PersonalProject {
+  title: string
+  tagline: string
+  year: string
+  status?: string
   desc: string
-  descBullets: string[]
+  highlights?: string[]
+  techStack: string[]
+  cover?: StaticImageData
+  livePreview?: string
 }
 
 export interface Experience {

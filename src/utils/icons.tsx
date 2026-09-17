@@ -3,9 +3,11 @@ import { FC, SVGProps } from 'react'
 import AngularIcon from '../assets/icons/angular.svg'
 import AspNetIcon from '../assets/icons/aspnet.svg'
 import AwsIcon from '../assets/icons/aws.svg'
+import BlazorIcon from '../assets/icons/blazor.svg'
 import CodeigniterIcon from '../assets/icons/codeigniter.svg'
 import CSharpIcon from '../assets/icons/csharp.svg'
 import DockerIcon from '../assets/icons/docker.svg'
+import DotNetIcon from '../assets/icons/dotnet.svg'
 import Earning from '../assets/icons/earning.svg'
 import ExpressjsIcon from '../assets/icons/express.svg'
 import FirebaseIcon from '../assets/icons/firebase.svg'
@@ -13,6 +15,7 @@ import JavaScriptIcon from '../assets/icons/javascript.svg'
 import LaravelIcon from '../assets/icons/laravel.svg'
 import Likes from '../assets/icons/likes.svg'
 import LinuxIcon from '../assets/icons/linux.svg'
+import MariaDBIcon from '../assets/icons/mariadb.svg'
 import MySQLIcon from '../assets/icons/mysql.svg'
 import NestjsIcon from '../assets/icons/nest.svg'
 import NextjsIcon from '../assets/icons/nextjs.svg'
@@ -327,6 +330,7 @@ export {
   ArrowRightIcon,
   AspNetIcon,
   AwsIcon,
+  BlazorIcon,
   BurgerIcon,
   CheckIcon,
   ChevronRightIcon,
@@ -335,6 +339,7 @@ export {
   Codepen,
   CSharpIcon,
   DockerIcon,
+  DotNetIcon,
   Earning,
   ExpressjsIcon,
   Facebook,
@@ -346,6 +351,7 @@ export {
   Likes,
   LinkedIn,
   LinuxIcon,
+  MariaDBIcon,
   MsgIcon,
   MySQLIcon,
   NestjsIcon,
